@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url(../images/bg-mobile.svg);
+	font-family: 'Raleway', sans-serif;
+}
+.left{
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 33px;
+	padding-bottom: 25px;
+	width: 90%;
+	border-radius: 8px 80px 8px 8px;
+	background-color: hsl(228, 56%, 26%);
+	box-shadow: 0px 0px 8px -4px black
+}
+.left .logo{
+	width: 105px;
+	padding-bottom: 20px;
+}
+.icon1, .icon2, .icon3{
+	border-radius: 6px;
+	background-color: hsl(229, 57%, 11%);
+	width: 38px;
+	height: 38px;
+}
+.icon1{
+
+	padding: 9.5px 11.5px;
+}
+.icon2{
+	padding: 10.4px 9.6px;
+}
+.icon3{
+	padding: 11px 8.5px;
+}
+.icon1, .icon2{
+	margin-right: 14px;
+}
+.right{
+	margin: 0 auto;
+	margin-top: 20px;
+	padding-top: 15px;
+	position: relative;
+	width: 90%;
+	height: 150px;
+	background-color: hsl(228, 56%, 26%);
+	border-radius: 8px;
+	box-shadow: 0px 0px 8px -4px black;
+}
+.usage{
+	font-size: 90%;
+	color: #fff;
+	text-align: center;
+}
+.meter { 
+	height: 14px;
+	width: 75%;
+	margin: 0 auto;
+	background-color: hsl(229, 57%, 16%);
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 2.5px;
+	position: relative;
+}
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+   background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.meter > div{
+	position: absolute;
+	height: 11px;
+	width: 11px;
+	background-color: white;
+	left: 80%;
+    top: 8%;
+    border-radius: 50%;
+    background-color: hsl(243, 100%, 93%);
+}
+.datleft{
+	display: flex;
+	align-items: center;
+	padding: 7px 15px;
+	width: 50%;
+	text-align: center;
+	border-radius: 8px;
+	background-color: #fff;
+	position: absolute;
+	top: 75%;
+	right: 25%;
+}
+.number{
+	font-weight: 700;
+	font-size: 200%;
+}
+.afternumber{
+	font-variant: small-caps;
+	font-size: 80%;
+	color: hsl(229, 7%, 55%);
+	display: inline-block;
+	font-weight: 700;
+	margin-left: 3px;
+}
+.lmark, .rmark{
+	display: inline-block;
+	margin: 0;
+	margin-top: 5px;
+	color: #fff;
+}
+.lmark{
+	margin-left: 11.5%;
+}
+.rmark{
+	margin-left: 45%;	
+}
+
+.attribution{
+	margin-top: 70px;
+	color: white;
+}
+
+@media screen  and (min-width: 958px){
+
+	body{
+		background-image: url(../images/bg-desktop.svg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: 0% 150% ; 
+		background-color: hsl(229, 57%, 11%);
+	}
+	.left .logo{
+		width: 125px;
+		padding-bottom: 30px;
+	}
+	.container{
+		display: flex;
+		margin-top: 200px;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	.right{
+		margin: 0;
+		flex-basis: 35%;
+	}
+	.left{
+		margin: 0;
+		flex-basis: 23%;
+		height: 190px;
+	}
+	.usage{
+		text-align: left;
+		margin-left: 12.5%;
+		font-size: 80%;
+	}
+	.left, .right{
+		margin: 20px;
+	}
+	.datleft{
+		width: 128.09px;
+	    top: -28%;
+	    right: 12.5%;
+	    padding: 10px 17px;
+	}
+	.rmark{
+		position: absolute;
+		right: 12.5%;
+	}
+	.meter>div{
+		left: 78%;
+	}
+}
