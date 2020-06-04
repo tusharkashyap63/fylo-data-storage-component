@@ -75,6 +75,16 @@ body{
    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
    max-width: 100%;
 }
+.meter > span::after{
+	content: '';
+	width: 0;
+	height: 0;
+	border: 4px solid #fff;
+	position: absolute;
+	left: calc(81.5% - 8px);
+	border-radius: 50%;
+
+}
 .datleft{
 	display: flex;
 	align-items: center;
