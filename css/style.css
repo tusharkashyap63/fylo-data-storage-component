@@ -132,8 +132,7 @@ body{
 	body{
 		background-image: url(../images/bg-desktop.svg);
 		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-position: 0% 150% ; 
+		background-position: top 300px left 0px; 
 		background-color: hsl(229, 57%, 11%);
 	}
 	.left .logo{
@@ -146,14 +145,14 @@ body{
 		justify-content: center;
 		align-items: flex-end;
 	}
-	.right{
-		margin: 0;
-		flex-basis: 35%;
-	}
 	.left{
 		margin: 0;
 		flex-basis: 23%;
 		height: 190px;
+	}
+	.right{
+		margin: 0;
+		flex-basis: 35%;
 	}
 	.usage{
 		text-align: left;
